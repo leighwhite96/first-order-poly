@@ -25,7 +25,7 @@ app.post('/',function(req,res){
   var{a,b,c} = input;
   var solution = solve(a,b,c);
   console.log(solution);
-  if(solution.substr(0,solution.indexOf(":")) === "Two solutions" || solution.substr(0,solution.indexOf(":")) === "one double solution" || solution.substr(0,solution.indexOf(":")) === "a first degree equation. Solution") {
+  if(solution.substr(0,solution.indexOf(":")) === "two solutions" || solution.substr(0,solution.indexOf(":")) === "one double solution" || solution.substr(0,solution.indexOf(":")) === "a first degree equation. Solution") {
   res.render("index", {
     sol: solution
   }
@@ -53,3 +53,7 @@ app.listen(PORT,function(){
 //might need multiple handlebars files for that?
 //add in a what the thing we're actually solving is
 //UI and UX stuff.
+
+
+//explanation for each outcome
+//get rid of the you have?
