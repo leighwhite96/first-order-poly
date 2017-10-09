@@ -13,9 +13,6 @@ app.set('view engine','handlebars');
 
 app.use(formidable());
 
-// app.get('/',function(req,res){
-//   res.sendFile(path.join(__dirname,"index.html"));
-// });
 app.get('/',function(req,res){
   res.render("index.handlebars");
 })
@@ -25,16 +22,10 @@ app.post('/',function(req,res){
   var{a,b,c} = input;
   var solution = solve(a,b,c);
   console.log(solution);
-  if(solution.substr(0,solution.indexOf(":")) === "two solutions" || solution.substr(0,solution.indexOf(":")) === "one double solution" || solution.substr(0,solution.indexOf(":")) === "a first degree equation. Solution") {
   res.render("index", {
     sol: solution
   }
   )
-} else if (solution == "no real solutions" || solution === "an indeterminate equation" || solution === "an impossible situation. Wrong entries."){
-  res.render("index", {
-    sol: solution
-  })
-}
 
 });
 

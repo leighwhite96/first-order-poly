@@ -4,22 +4,22 @@ var solve = function secDegSolver(a, b, c){
       let x = parseFloat((((-1)*b + Math.sqrt(b*b - 4*a*c))/(2*a)).toFixed(10));
       let y = parseFloat((((-1)*b - Math.sqrt(b*b - 4*a*c))/(2*a)).toFixed(10));
       let sol = [x,y].sort();
-        return "two solutions: " + sol[0] + ", " + sol[1];
+        return "There are two solutions: " + sol[0] + ", " + sol[1];
     } else if (b*b - 4*a*c == 0){
       let x = Math.floor((((-1)*b)/(2*a)).toFixed(10));
-        return "one double solution: " + x;
+        return "There is one repeated solution: " + x;
     } else if (b*b - 4*a*c < 0) {
-        return "no real solutions"
+        return "There are no real solutions"
     }
   } else {
     if(b != 0) {
       var x = (-1*c)/b;
-      return "a first degree equation. Solution: " + x;
+      return "This is a first degree equation. It has solution: " + x;
     } else {
       if(c == 0) {
-        return "an indeterminate equation";
+        return "This is an indeterminate equation";
       }
-      return "an impossible situation. Wrong entries."
+      return "This is an impossible situation. Wrong entries."
     }
   }
 }
