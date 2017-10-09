@@ -13,9 +13,6 @@ app.set('view engine','handlebars');
 
 app.use(formidable());
 
-// app.get('/',function(req,res){
-//   res.sendFile(path.join(__dirname,"index.html"));
-// });
 app.get('/',function(req,res){
   res.render("index.handlebars");
 })
@@ -25,7 +22,6 @@ app.post('/',function(req,res){
   var{a,b,c} = input;
   var solution = solve(a,b,c);
   console.log(solution);
-
   res.render("index", {
     sol: solution
   }
@@ -48,3 +44,7 @@ app.listen(PORT,function(){
 //might need multiple handlebars files for that?
 //add in a what the thing we're actually solving is
 //UI and UX stuff.
+
+
+//explanation for each outcome
+//get rid of the you have?
