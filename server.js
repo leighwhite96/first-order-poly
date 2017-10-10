@@ -8,6 +8,8 @@ const solve = require("./index.js");
 const app = express();
 const PORT = 3000;
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 app.engine('handlebars',handlebars({defaultLayout: 'main'}));
 app.set('view engine','handlebars');
 
