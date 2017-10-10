@@ -23,9 +23,15 @@ app.post('/',function(req,res){
   var input = req.fields;
   var{a,b,c} = input;
   var solution = solve(a,b,c);
-  console.log(solution);
+  if(c < 0){
+    var equation = `Your equation is $$${a}x^2 + ${b}x ${c} = 0$$`
+  } else {
+  var equation = `Your equation is $$${a}x^2 + ${b}x + ${c} = 0$$`
+  }
+
   res.render("index", {
-    sol: solution
+    sol: solution,
+    eq: equation
   }
   )
 

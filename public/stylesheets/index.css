@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
 * {
-  font-family: arial;
+  font-family: asap;
+}
+
+body {
+  background-color: #f4faff;
+}
+
+div {
+  width: 50vw;
+  margin: 10vh auto;
+  text-align: center;
+  color: #4c4d4f;
+}
+
+.form-control {
+  width: 10vh;
 }

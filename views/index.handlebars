@@ -1,17 +1,20 @@
+<div id="container">
 <h1>Let's solve the following equation:</h1>
-<h2>ax<sup>2</sup> + bx + c = 0</h2>
-<h2>Please enter values for coefficients a,b and c:</h2>
-<form method="POST" action="/">
+<h2>$$ax^2 + bx + c = 0$$</h2>
+<h2>Please enter values for coefficients \(a,b\) and \(c\):</h2>
+<form method="POST" action="/" class="form-group">
   <label for="a">
-  <input name="a" type="number" placeholder="a" />
+  <input name="a" type="number" placeholder="a" class="form-control"/>
   </label>
   <label for="b">
-  <input name="b" type="number" placeholder="b"/>
+  <input name="b" type="number" placeholder="b" class="form-control"/>
   </label>
   <label for="c">
-  <input name="c" type="number" placeholder="c"/>
+  <input name="c" type="number" placeholder="c" class="form-control"/>
   </label>
-  <input type="submit" value="submit">
+  <input type="submit" value="Submit" class=" btn btn-default">
 </form>
 <h1>Solution:</h1>
+<h2>{{eq}}</h2>
 <h2>{{sol}}</h2>
+</div>
