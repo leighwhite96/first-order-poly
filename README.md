@@ -5,5 +5,6 @@ A small personal project that solves the equation ax^2 + bx + c = 0. It takes us
 # Getting started 
 
 To run this application on your own machine clone this repository and run the following command in your console 
-
-> npm install 
+```
+ npm install 
+```
