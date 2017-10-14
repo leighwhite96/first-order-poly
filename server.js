@@ -51,8 +51,15 @@ app.listen(PORT,function(){
 //need to change the display message so that the message reads nicer. Maybe an if sol = "" render this?
 //might need multiple handlebars files for that?
 //add in a what the thing we're actually solving is
-//UI and UX stuff.
+//UI
 
-
+//TO DO
 //explanation for each outcome
-//get rid of the you have?
+
+//make the answers display nicely with mathmode
+//if you put in 1x or 0x display x or nothing respectively
+//maybe log all the equation you have solved in that session?
+//more responsive
+//title
+//imaginary equation solver?
+//click for more explanation?
